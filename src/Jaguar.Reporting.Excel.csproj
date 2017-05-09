@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp1.1</TargetFramework>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Authors>Carlos Jesús Huchim Ahumada</Authors>
+    <Company>Jaguar</Company>
+    <Description>Permite usar Excel para los reportes.</Description>
+    <Copyright>Carlos Jesús Huchim Ahumada</Copyright>
+    <PackageTags>reporting</PackageTags>
+    <PackageReleaseNotes>Beta</PackageReleaseNotes>
+    <Version>1.0.0-beta</Version>
+    <PackageProjectUrl>https://github.com/huchim/reporting-excel</PackageProjectUrl>
+    <PackageLicenseUrl>https://github.com/huchim/reporting-excel/blob/master/LICENSE</PackageLicenseUrl>
+    <RepositoryUrl>https://github.com/huchim/reporting-excel</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <RootNamespace>Jaguar.Reporting</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <AdditionalFiles Include="stylecop.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="EPPlus.Core" Version="1.3.2" />
+    <PackageReference Include="Jaguar.Reporting" Version="1.0.0-beta2" />
+  </ItemGroup>
+</Project>

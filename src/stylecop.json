@@ -1,0 +1,11 @@
+﻿{
+  "$schema": "https://raw.githubusercontent.com/DotNetAnalyzers/StyleCopAnalyzers/master/StyleCop.Analyzers/StyleCop.Analyzers/Settings/stylecop.schema.json",
+  "settings": {
+    "documentationRules": {
+      "documentationCulture": "es-MX",
+      "companyName": "Carlos Huchim Ahumada",
+      "copyrightText": "Este código se libera bajo los términos de licencia especificados.",
+      "headerDecoration": "-----------------------------------------------------------------------"      
+    }
+  }
+}
