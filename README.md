@@ -8,7 +8,7 @@ Permite manejar los reportes en formato de Excel (xlsx)
 var reportManager = new ReportManager(this.connection);
 
 // Registrar este generador.
-reportManager.AddGenerator(new Cfe.Cefag.Reports.Generators.ExcelGenerator());
+reportManager.AddGenerator(new ExcelGenerator());
 
 // Agregar las variables de la consulta (opcional)
 foreach (var k in this.Request.Query)
