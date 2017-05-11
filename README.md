@@ -1,6 +1,7 @@
 # reporting-excel
 
 [![Visual Studio Team services](https://img.shields.io/vso/build/huchim/b3010c88-dae9-415b-a73f-d0d3d47d8073/3.svg)]()
+[![NuGet Pre Release](https://img.shields.io/nuget/v/Jaguar.Reporting.Excel.svg?style=flat-square)]()
 [![NuGet Pre Release](https://img.shields.io/nuget/vpre/Jaguar.Reporting.Excel.svg?style=flat-square)]()
 
 Permite manejar los reportes en formato de Excel (xlsx)
