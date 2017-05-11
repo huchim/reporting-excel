@@ -1,5 +1,6 @@
 # reporting-excel
 
+[![Visual Studio Team services](https://img.shields.io/vso/build/huchim/b3010c88-dae9-415b-a73f-d0d3d47d8073/3.svg)]()
 
 Permite manejar los reportes en formato de Excel (xlsx)
 
