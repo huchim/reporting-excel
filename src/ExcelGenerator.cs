@@ -138,9 +138,35 @@ namespace Jaguar.Reporting.Generators
             this.variables = variables;
             this.report = report;
 
+            foreach (var scripts in this.report.Sql)
+            {
+                this.ThrowErrorIfEmpty(scripts.Name, data);
+            }
+
             var results = this.IsTemplating ? this.CreateCustomFile(data) : this.CreateDefaultFile(data);
 
             return results;
+        }
+
+        private void ThrowErrorIfEmpty(string tableName, List<DataTable> data)
+        {
+            var requiredTables = this.report.Options["excel.throwerror"]?.ToString().Split(",;".ToArray(), StringSplitOptions.RemoveEmptyEntries);
+            var mustExists = requiredTables.Contains(tableName);
+
+            // Verificar que la tabla exista entre los resultados.
+            var table = data.FirstOrDefault(x => x.TableName == tableName);
+
+            if (mustExists && table == null)
+            {
+                // La tabla es obligatoria, pero no existen registros.
+                throw new NoDataException(tableName, "No fue encontrada la tabla entre los resultados.");
+            }
+
+            if (mustExists && !table.HasRows)
+            {
+                // La tabla es obligatoria, pero no existen registros.
+                throw new NoDataException(tableName, "No existen resultados en la tabla.");
+            }
         }
 
         private void ReplaceWorkBookVariables(ExcelWorkbook wb)
