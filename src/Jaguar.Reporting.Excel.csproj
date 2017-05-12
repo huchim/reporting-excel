@@ -9,7 +9,7 @@
     <Copyright>Carlos Jesús Huchim Ahumada</Copyright>
     <PackageTags>reporting</PackageTags>
     <PackageReleaseNotes>Beta</PackageReleaseNotes>
-    <Version>1.0.0-beta1</Version>
+    <Version>1.0.0-beta2</Version>
     <PackageProjectUrl>https://github.com/huchim/reporting-excel</PackageProjectUrl>
     <PackageLicenseUrl>https://github.com/huchim/reporting-excel/blob/master/LICENSE</PackageLicenseUrl>
     <RepositoryUrl>https://github.com/huchim/reporting-excel</RepositoryUrl>
@@ -21,6 +21,6 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="EPPlus.Core" Version="1.3.2" />
-    <PackageReference Include="Jaguar.Reporting" Version="1.0.0-beta3" />
+    <PackageReference Include="Jaguar.Reporting" Version="1.0.0-beta5" />
   </ItemGroup>
 </Project>
